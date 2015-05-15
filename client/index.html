@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loveitApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Loveit</title>
+</head>
+<body ng-controller="HomeController as home">
+    <section class="content">
+        <file name="image" ng-model="fileInput" images="home.images"></file>
+        <br>
+        {{fileInput.name}}
+        <section>
+            <image-list ng-show="home.images.length"></image-list>
+        </section>
+    </section>
+    <script src="./libs/angular/angular.min.js"></script>
+    <script src="./libs/fileDirective.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "loveit-angular",
+  "version": "0.0.1",
+  "description": "AngularJS version of Loveit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andremw/loveit-angular.git"
+  },
+  "keywords": [
+    "websockets",
+    "socket.io",
+    "angularjs"
+  ],
+  "author": "andremw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andremw/loveit-angular/issues"
+  },
+  "homepage": "https://github.com/andremw/loveit-angular",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
