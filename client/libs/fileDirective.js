@@ -18,17 +18,20 @@
                         var inputElem = element[0],
                             files = inputElem.files,
                             file = null,
-                            url = null;
+                            url = null,
+                            result = scope.images.slice(0);
 
                         for (var i = 0; i < files.length; i++) {
                             file = files[i];
                             url = URL.createObjectURL(file);
-                            scope.images.push({
+                            result.push({
                                 name: file.name,
                                 type: file.type,
                                 src: url
                             });
                         }
+
+                        scope.images = result;
                     });
                 };
                 element.bind('change', listener);

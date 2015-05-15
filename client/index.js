@@ -10,12 +10,15 @@
         };
     });
 
-    app.controller('HomeController', ['$http', function ($http) {
-        this.images = [];
+    app.controller('HomeController', ['$http', '$scope', function ($http, $scope) {
+        $scope.images = [];
 
-        Object.observe(this.images, function (changes) {
-            console.log(changes);
+        $scope.$watch('images', function (newValue, oldValue) {
+            if (newValue.length) {
+                var newValues = newValue.slice(oldValue.length, newValue.length);
+                // request to the API to update the other users passing just the new values
+            }
         });
-        // send request to API to fetch the uploaded image-list
+
     }]);
 }(window, document);
