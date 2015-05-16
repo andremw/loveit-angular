@@ -19,7 +19,7 @@
                             files = inputElem.files,
                             file = null,
                             url = null,
-                            result = scope.images.slice(0);
+                            result = [];
 
                         for (var i = 0; i < files.length; i++) {
                             file = files[i];

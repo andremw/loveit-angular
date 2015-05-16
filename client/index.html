@@ -10,12 +10,15 @@
         <br>
         {{fileInput.name}}
         <section>
-            <image-list ng-show="images.length"></image-list>
+            <image-list ng-show="home.allImages.length"></image-list>
         </section>
     </section>
+
+    <script src="socket-io/socket.io.js"></script>
     <script src="components/angular/angular.min.js"></script>
     <script src="components/angular-socket-io/socket.min.js"></script>
     <script src="./libs/fileDirective.js"></script>
+    <script src="socket.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
