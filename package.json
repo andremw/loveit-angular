@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/andremw/loveit-angular",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "socket.io": "^1.3.5"
   }
 }
